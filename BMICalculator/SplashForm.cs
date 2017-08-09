@@ -12,13 +12,26 @@ using System.Windows.Forms;
  * Name: Taeho Kim
  * Date: Aug 8, 2017
  * Description: This is the SplashForm class
- * Version: 0.3 - Refactored the SplashFormTimer "Tick handler
+ * Version: 0.4 - Created a Public Property as an Alias to Program.calculator
  */
 
 namespace BMICalculator
 {
     public partial class SplashForm : Form
     {
+        // PUBLIC PROPERTIES
+        public BMICalculator calculator
+        {
+            get
+            {
+                return Program.calculator;
+            }
+        }
+        // CONSTRUCTORS
+
+        /// <summary>
+        /// This is the main constructor for the SplashForm
+        /// </summary>
         public SplashForm()
         {
             InitializeComponent();
@@ -31,8 +44,10 @@ namespace BMICalculator
         /// <param name="e"></param>
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
-            Program.calculator.Show();
+            this.calculator.Show();
+
             this.Hide();
+
             SplashFormTimer.Enabled = false; // turn timer off
         }
     }
