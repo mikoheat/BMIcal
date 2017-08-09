@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/* 
+ * Name: Taeho Kim
+ * Date: Aug 8, 2017
+ * Description: BMI Calculator Project
+ * Version: 0.1 - Added a FormClosing event handler
+ */
+
 namespace BMICalculator
 {
     public partial class BMICalculator : Form
@@ -17,9 +24,14 @@ namespace BMICalculator
             InitializeComponent();
         }
 
-        private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
+        /// <summary>
+        /// This is an event handler for the "FormClosing" event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BMICalculator_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
