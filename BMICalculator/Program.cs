@@ -16,7 +16,7 @@ namespace BMICalculator
     public static class Program
     {
         // Create Reference to Forms
-        public static BMICalculator calculator = new BMICalculator();
+        public static BMICalculator calculator;
 
         /// <summary>
         /// The main entry point for the application.
@@ -26,6 +26,10 @@ namespace BMICalculator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            
+            // Instantiate a new object of type BMICalculator
+            calculator = new BMICalculator();
+
             Application.Run(new SplashForm());
         }
     }
