@@ -8,18 +8,21 @@ using System.Windows.Forms;
  * Name: Taeho Kim
  * Date: Aug 8, 2017
  * Description: BMI Calculator Project
- * Version: 0.1 - Started SplashForm first
+ * Version: 0.2 - Create an instance of the BMICalculator object
  */
 
 namespace BMICalculator
 {
-    static class Program
+    public static class Program
     {
+        // Create Reference to Forms
+        public static BMICalculator calculator = new BMICalculator();
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
