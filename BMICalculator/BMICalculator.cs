@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Name: Taeho Kim
  * Date: Aug 8, 2017
  * Description: BMI Calculator Project
- * Version: 0.3 - Implemented "calculate bmi" function
+ * Version: 0.4 - Control input values of HeightBox and WeightBox (Allow digit, decimal point, and backspace)
  */
 
 namespace BMICalculator
@@ -140,6 +140,38 @@ namespace BMICalculator
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
+            }
+        }
+
+        /// <summary>
+        /// Those two method "HeightBox_KeyPress" and "WeightBox_KeyPress"
+        /// Control input value which only allows digit, backspace, and a decimal point
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HeightBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '.' && HeightBox.Text.Contains('.'))
+            {
+                e.Handled = true;
+            }
+            
+            if (!Char.IsDigit(e.KeyChar) && !(e.KeyChar == '\b') && !(e.KeyChar == '.')) 
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void WeightBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '.' && WeightBox.Text.Contains('.'))
+            {
+                e.Handled = true;
+            }
+
+            if (!Char.IsDigit(e.KeyChar) && !(e.KeyChar == '\b') && !(e.KeyChar == '.'))
+            {
+                e.Handled = true;
             }
         }
     }

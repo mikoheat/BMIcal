@@ -105,6 +105,7 @@
             this.WeightBox.Name = "WeightBox";
             this.WeightBox.Size = new System.Drawing.Size(130, 38);
             this.WeightBox.TabIndex = 6;
+            this.WeightBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.WeightBox_KeyPress);
             // 
             // HeightBox
             // 
@@ -113,6 +114,7 @@
             this.HeightBox.Name = "HeightBox";
             this.HeightBox.Size = new System.Drawing.Size(130, 38);
             this.HeightBox.TabIndex = 4;
+            this.HeightBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.HeightBox_KeyPress);
             // 
             // CalculateButton
             // 
