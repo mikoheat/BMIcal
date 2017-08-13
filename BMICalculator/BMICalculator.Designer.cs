@@ -82,6 +82,7 @@
             this.ImperialButton.Text = "Imperial";
             this.ImperialButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.ImperialButton.UseVisualStyleBackColor = true;
+            this.ImperialButton.Click += new System.EventHandler(this.ImperialButton_Click);
             // 
             // MetrixButton
             // 
@@ -95,6 +96,7 @@
             this.MetrixButton.Text = "Metrix";
             this.MetrixButton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.MetrixButton.UseVisualStyleBackColor = true;
+            this.MetrixButton.Click += new System.EventHandler(this.MetrixButton_Click);
             // 
             // WeightBox
             // 
