@@ -143,9 +143,10 @@
             // 
             this.MyWeightLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MyWeightLabel.AutoSize = true;
-            this.MyWeightLabel.Location = new System.Drawing.Point(19, 134);
+            this.MyWeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyWeightLabel.Location = new System.Drawing.Point(11, 153);
             this.MyWeightLabel.Name = "MyWeightLabel";
-            this.MyWeightLabel.Size = new System.Drawing.Size(98, 62);
+            this.MyWeightLabel.Size = new System.Drawing.Size(114, 25);
             this.MyWeightLabel.TabIndex = 5;
             this.MyWeightLabel.Text = "My Weight";
             // 
@@ -164,9 +165,10 @@
             // 
             this.MyHeightLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MyHeightLabel.AutoSize = true;
-            this.MyHeightLabel.Location = new System.Drawing.Point(21, 51);
+            this.MyHeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MyHeightLabel.Location = new System.Drawing.Point(13, 70);
             this.MyHeightLabel.Name = "MyHeightLabel";
-            this.MyHeightLabel.Size = new System.Drawing.Size(93, 62);
+            this.MyHeightLabel.Size = new System.Drawing.Size(109, 25);
             this.MyHeightLabel.TabIndex = 3;
             this.MyHeightLabel.Text = "My Height";
             // 

@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Name: Taeho Kim
  * Date: Aug 12, 2017
  * Description: BMI Calculator Project
- * Version: 0.6 - Implement BMIevaluation method
+ * Version: 0.6.1 - Fixed label text
  */
 
 namespace BMICalculator
@@ -95,16 +95,16 @@ namespace BMICalculator
         {
             Calculator = "Imperial";
 
-            MyHeightLabel.Text = "Inches";
-            MyWeightLabel.Text = "Pounds";
+            MyHeightLabel.Text = "My Height\n(Inches)";
+            MyWeightLabel.Text = "My Weight\n(Pounds)";
         }
 
         private void MetrixButton_Click(object sender, EventArgs e)
         {
             Calculator = "Metrix";
 
-            MyHeightLabel.Text = "Meters";
-            MyWeightLabel.Text = "Kg";
+            MyHeightLabel.Text = "My Height\n(Meters)";
+            MyWeightLabel.Text = "My Weight\n(Kg)";
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)
