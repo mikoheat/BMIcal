@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 /* 
  * Name: Taeho Kim
- * Date: Aug 8, 2017
+ * Date: Aug 12, 2017
  * Description: BMI Calculator Project
- * Version: 0.4 - Control input values of HeightBox and WeightBox (Allow digit, decimal point, and backspace)
+ * Version: 0.5 - Implement Reset button function
  */
 
 namespace BMICalculator
@@ -173,6 +173,14 @@ namespace BMICalculator
             {
                 e.Handled = true;
             }
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            HeightBox.Text = "";
+            WeightBox.Text = "";
+            ResultBox.Text = "";
+            MultilineTextBox.Text = "";
         }
     }
 }
