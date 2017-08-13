@@ -67,6 +67,7 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel.Size = new System.Drawing.Size(272, 418);
             this.tableLayoutPanel.TabIndex = 0;
             // 
@@ -172,11 +173,12 @@
             // MultilineTextBox
             // 
             this.MultilineTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MultilineTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.tableLayoutPanel.SetColumnSpan(this.MultilineTextBox, 2);
-            this.MultilineTextBox.Enabled = false;
-            this.MultilineTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MultilineTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MultilineTextBox.Location = new System.Drawing.Point(3, 316);
             this.MultilineTextBox.Name = "MultilineTextBox";
+            this.MultilineTextBox.ReadOnly = true;
             this.MultilineTextBox.Size = new System.Drawing.Size(266, 96);
             this.MultilineTextBox.TabIndex = 11;
             this.MultilineTextBox.Text = "";

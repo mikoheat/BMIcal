@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * Name: Taeho Kim
  * Date: Aug 12, 2017
  * Description: BMI Calculator Project
- * Version: 0.5 - Implement Reset button function
+ * Version: 0.6 - Implement BMIevaluation method
  */
 
 namespace BMICalculator
@@ -131,6 +131,7 @@ namespace BMICalculator
                     }
 
                     ResultBox.Text = bmi.ToString();
+                    BMIevaluation(bmi);
                 }
                 else
                 {
@@ -181,6 +182,41 @@ namespace BMICalculator
             WeightBox.Text = "";
             ResultBox.Text = "";
             MultilineTextBox.Text = "";
+            MultilineTextBox.BackColor = Color.White;
+        }
+
+        /// <summary>
+        /// This method makes MultilineTextBox-color changed by bmi result
+        /// </summary>
+        /// <param name="bmi"></param>
+        private void BMIevaluation(double bmi)
+        {
+            if (bmi < 18.5)
+            {
+                MultilineTextBox.Text = "Underweight";
+                MultilineTextBox.ForeColor = Color.White;
+                MultilineTextBox.BackColor = Color.MidnightBlue;
+
+            }
+            else if (bmi >= 18.5 && bmi <= 24.9)
+            {
+                MultilineTextBox.Text = "Normal";
+                MultilineTextBox.ForeColor = Color.White;
+                MultilineTextBox.BackColor = Color.Lime;
+            }
+            else if (bmi >= 25 && bmi <= 29.9)
+            {
+                MultilineTextBox.Text = "Overweight";
+                MultilineTextBox.ForeColor = Color.White;
+                MultilineTextBox.BackColor = Color.Crimson;
+
+            }
+            else if (bmi > 30)
+            {
+                MultilineTextBox.Text = "Obese";
+                MultilineTextBox.ForeColor = Color.White;
+                MultilineTextBox.BackColor = Color.Red;
+            }
         }
     }
 }
