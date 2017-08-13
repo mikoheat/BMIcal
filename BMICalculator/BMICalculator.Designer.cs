@@ -124,6 +124,7 @@
             this.CalculateButton.TabIndex = 8;
             this.CalculateButton.Text = "Calculate BMI";
             this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
             // ResultBox
             // 
@@ -169,6 +170,7 @@
             // 
             this.MultilineTextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel.SetColumnSpan(this.MultilineTextBox, 2);
+            this.MultilineTextBox.Enabled = false;
             this.MultilineTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MultilineTextBox.Location = new System.Drawing.Point(3, 316);
             this.MultilineTextBox.Name = "MultilineTextBox";
